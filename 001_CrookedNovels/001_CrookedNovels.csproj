@@ -4,8 +4,6 @@
     <TargetFramework>net5.0</TargetFramework>
     <RootNamespace>_001_CrookedNovels</RootNamespace>
     <CopyRefAssembliesToPublishDirectory>false</CopyRefAssembliesToPublishDirectory>
-    <RazorCompileOnBuild>false</RazorCompileOnBuild>
-    <RazorCompileOnPublish>false</RazorCompileOnPublish>
   </PropertyGroup>
 
   <ItemGroup>
