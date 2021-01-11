@@ -1,0 +1,19 @@
+﻿@page
+@model _Core.Web.Model.User.ListModel
+@{
+    ViewBag.Title = "User";
+    Layout = "~/Views/Master/CMS.Master.cshtml";
+}
+<button id="add">Add</button>
+@*@await Html.Partial("~/Areas/Core/Views/User/_List.cshtml", Model);*@
+<partial name="_List" model="Model" />
+
+
+
+
+<script>
+    var url = '@Url.Action("Add", "Add")';
+    $('#add').click(function() {
+        $('#formModal').load(url);
+    })
+</script>

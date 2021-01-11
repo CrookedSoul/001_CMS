@@ -1,0 +1,55 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    <h3 align="center">Sidebar</h3>
+
+    <ul class="list-unstyled components">
+        <p align="center"></p>
+        <li>
+            <a href="#novelSubMenu" data-toggle="collapse" class="dropdown-toggle">Novel</a>
+            <ul class="collapse list-unstyled" id="novelSubMenu">
+                <li>
+                    <a class="subMenu" href="/CMS/Novel/Novel/Index">Novel</a>
+                </li>
+                <li>
+                    <a class="subMenu" href="/CMS/Novel/Chapter/Index">Chapter</a>
+                </li>
+                <li>
+                    <a class="subMenu" href="/CMS/Novel/Genre/Index">Genre</a>
+                </li>
+                <li>
+                    <a class="subMenu" href="/CMS/Novel/Tag/Index">Tag</a>
+                </li>
+                <li>
+                    <a class="subMenu" href="/CMS/Novel/Status/Index">Status</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="/CMS/Author/Index">Author</a>
+        </li>
+        <li>
+            <a href="/CMS/Translator/Index">Translator</a>
+        </li>
+        <li>
+            <a href="/CMS/Editor/Index">Editor</a>
+        </li>
+        <li>
+            <a href="#userSubMenu" data-toggle="collapse" class="dropdown-toggle">User</a>
+            <ul class="collapse list-unstyled" id="userSubMenu">
+                <li>
+                    <a class="subMenu" href="/CMS/User/Index">User</a>
+                </li>
+                <li>
+                    <a class="subMenu" href="/CMS/User/Type/Index">Type</a>
+                </li>
+            </ul>
+        </li>
+        <div class="col-md">
+            <form action="" method="POST">
+                <button type="submit" class="btn btn-danger" name="logout">Log out </button>
+            </form>
+        </div>
+    </ul>
+}
