@@ -5,15 +5,12 @@
     Layout = "~/Views/Master/CMS.Master.cshtml";
 }
 <button id="add">Add</button>
+<div class="form-group float-right">
+    <button id="AddButton" class="btn btn-primary" type="button" data-toggle="modal" data-target="#formModal">
+        Add New User
+    </button>
+</div>
 @*@await Html.Partial("~/Areas/Core/Views/User/_List.cshtml", Model);*@
 <partial name="_List" model="Model" />
-
-
-
-
-@*<script>
-    var url = '@Url.Action("Add", "Add")';
-    $('#add').click(function() {
-        $('#formModal').load(url);
-    })
-</script>*@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="~/Content/Areas/Core/User/Script.js"></script>

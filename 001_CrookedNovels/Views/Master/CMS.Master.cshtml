@@ -16,10 +16,13 @@
 </head>
 <body>
     <nav class="sidebar">
-        @await Html.PartialAsync("~/Views/Shared/Menu.cshtml")
+        @await Html.PartialAsync("~/Views/Shared/_Menu.cshtml")
     </nav>
     <div>
         @RenderBody()
+    </div>
+    <div>
+        @await Html.PartialAsync("~/Views/Shared/_FormModal.cshtml")
     </div>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
@@ -28,5 +31,6 @@
     <!-- Custom JS -->
     <!-- Our Custom Sidebar JS -->
     <script src="~/Content/Sidebar/Menu.js"></script>
+    <script src="~/Content/Master/Global.js"></script>
 </body>
 </html>

@@ -16,10 +16,12 @@ namespace _001_CrookedNovels.Areas.Core.Controllers
             return View("~/Areas/Core/Views/User/Index.cshtml", model);
         }
 
+        [HttpPost]
+        [Route("CMS/[controller]/[action]")]
         public IActionResult Add()
         {
-            
-            return View();
+            FormModel model = this.AddRequest();
+            return View("~/Areas/Core/Views/User/_Form.cshtml", model);
         }
     }
 }

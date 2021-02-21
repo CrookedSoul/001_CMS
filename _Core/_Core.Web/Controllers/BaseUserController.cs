@@ -23,7 +23,13 @@ namespace _Core.Web.Controllers
             return model;
         }
 
-        public int AddRequest(FormModel model)
+        public FormModel AddRequest()
+        {
+            FormModel model = new FormModel();
+            return model;
+        }
+
+        public int SaveRequest(FormModel model)
         {
             UserInfo ent = PrepareEntityFromModel(model);
             int result = user.Add(ent);
